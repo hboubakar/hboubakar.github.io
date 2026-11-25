@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr Hichem Boubakar: interactive engineering labs</title>
+<meta name="description" content="Interactive labs by Dr Hichem Boubakar for learning and teaching RF, microwave and telecommunications engineering.">
+<meta property="og:title" content="Dr Hichem Boubakar: interactive engineering labs">
+<meta property="og:description" content="Interactive labs for learning and teaching RF, microwave and telecommunications engineering.">
+<meta property="og:image" content="https://hboubakar.github.io/images/library.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/favicon.ico">
+<style>
+:root {
+  --bg: #fafaff; --surface: #ffffff; --soft: #f1eefb; --line: #e1daf5;
+  --ink: #1c1552; --text: #2b2950; --muted: #5c567c; --accent: #3d1fc2; --accent-ink: #ffffff;
+  --shadow: 0 10px 30px rgba(40, 20, 110, .10);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12101f; --surface: #1b1830; --soft: #221e3b; --line: #332d55;
+    --ink: #ece9ff; --text: #d9d5f2; --muted: #a49fc4; --accent: #8f7bff; --accent-ink: #12101f;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+a { color: var(--accent); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+header.intro { padding: 72px 0 36px; }
+header.intro .who { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+header.intro .who img { width: 44px; height: 44px; border-radius: 10px; }
+header.intro .who span { font-weight: 650; color: var(--muted); }
+h1 { font-size: clamp(32px, 5vw, 50px); line-height: 1.1; color: var(--ink); margin: 0 0 14px; letter-spacing: -.02em; max-width: 780px; }
+.lead { font-size: 19px; color: var(--muted); margin: 0; max-width: 680px; }
+
+h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 18px; }
+.apps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; padding-bottom: 28px; }
+.app { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+.app > a.pic { display: block; border-bottom: 1px solid var(--line); aspect-ratio: 1600 / 873; overflow: hidden; }
+.app > a.pic img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.app > a.pic:hover img { transform: scale(1.02); }
+.app .body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
+.tag { align-self: flex-start; font-size: 12.5px; font-weight: 650; color: var(--accent); background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; margin-bottom: 10px; }
+.app h3 { margin: 0 0 6px; font-size: 21px; color: var(--ink); }
+.app h3 a { color: inherit; text-decoration: none; }
+.app h3 a:hover { color: var(--accent); }
+.app p { margin: 0 0 18px; color: var(--muted); }
+.actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.button { display: inline-flex; align-items: center; padding: 10px 18px; border-radius: 10px; font-weight: 650; font-size: 15px; text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface); }
+.button:hover { border-color: var(--accent); }
+.button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.button.primary:hover { filter: brightness(1.08); }
+
+.soon { grid-column: 1 / -1; border: 1px dashed var(--line); border-radius: 14px; padding: 20px 22px; display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap; }
+.soon strong { color: var(--ink); }
+.soon span { color: var(--muted); }
+
+footer { border-top: 1px solid var(--line); padding: 26px 0 40px; font-size: 14px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+
+@media (max-width: 760px) {
+  header.intro { padding: 44px 0 26px; }
+  .apps { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header class="intro">
+  <div class="wrap">
+    <div class="who"><img src="images/icon.png" alt="" width="44" height="44"><span>Dr Hichem Boubakar</span></div>
+    <h1>Interactive labs for RF, microwave and telecommunications engineering</h1>
+    <p class="lead">Hands-on tools where every number on the screen can be checked against the theory. Free for learning and teaching.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Apps</h2>
+  <div class="apps">
+    <article class="app">
+      <a class="pic" href="https://hboubakar.github.io/rf-circuit-design-lab/"><img src="images/library.jpg" alt="RF Circuit Design Lab library of labs" width="1600" height="873"></a>
+      <div class="body">
+        <span class="tag">Windows app · free beta</span>
+        <h3><a href="https://hboubakar.github.io/rf-circuit-design-lab/">RF Circuit Design Lab</a></h3>
+        <p>Offline labs for transmission lines, matching, filters, microstrip, the Smith chart, amplifiers, couplers and oscillators, with theory chapters and guided experiments.</p>
+        <div class="actions">
+          <a class="button primary" href="https://hboubakar.github.io/rf-circuit-design-lab/">Learn more and download</a>
+          <a class="button" href="https://github.com/hboubakar/rf-circuit-design-lab/releases">All versions</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="app">
+      <a class="pic" href="https://hboubakar.github.io/rf-circuit-design-lab/smith/"><img src="images/smith-chart.jpg" alt="Smith chart workspace" width="1600" height="873"></a>
+      <div class="body">
+        <span class="tag">Runs in the browser · phone and desktop</span>
+        <h3><a href="https://hboubakar.github.io/rf-circuit-design-lab/smith/">Smith Chart Lab</a></h3>
+        <p>Plot loads, design matching networks step by step, and work through guided lessons on the Smith chart. Nothing to install, and it keeps working offline.</p>
+        <div class="actions">
+          <a class="button primary" href="https://hboubakar.github.io/rf-circuit-design-lab/smith/">Open the Smith Chart Lab</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="soon"><strong>More labs coming soon</strong><span>New apps will appear here as they are released.</span></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr Hichem Boubakar</span>
+    <span><a href="https://github.com/hboubakar">GitHub</a> · <a href="https://github.com/hboubakar/rf-circuit-design-lab/issues">Report a problem</a></span>
+  </div>
+</footer>
+</body>
+</html>
